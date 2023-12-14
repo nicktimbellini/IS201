@@ -1,0 +1,82 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for Lists */
+ol {
+    counter-reset: item;
+}
+ol li {
+    counter-increment: item;
+    margin-bottom: 10px;
+}
+ol li:before {
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+/* Video Embed Styles */
+iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    clear: both;
+}
+
+/* Anchor Link Styles */
+a {
+    color: #2193b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6dd5ed;
+}
